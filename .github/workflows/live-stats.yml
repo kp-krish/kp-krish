@@ -3,11 +3,12 @@ name: Live stats
 on:
   schedule:
     - cron: "17 */6 * * *"   # every 6 hours
-  workflow_dispatch:          # manual "Run workflow" button
+  workflow_dispatch:
   push:
     branches: [main]
     paths-ignore:
       - README.md
+      - assets/stats.svg
 
 permissions:
   contents: write
@@ -22,11 +23,9 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Refresh stats block
+      - name: Regenerate stats card
         env:
           GH_USER: kp-krish
-          # PAT with public_repo scope gives higher rate limits and private counts.
-          # Falls back to the built-in token if PAT_TOKEN is not set.
           GH_TOKEN: ${{ secrets.PAT_TOKEN || secrets.GITHUB_TOKEN }}
         run: python scripts/live_stats.py
 
@@ -34,6 +33,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add README.md
-          git diff --staged --quiet || git commit -m "chore: refresh live stats"
+          git add README.md assets/stats.svg
+          git diff --staged --quiet || git commit -m "chore: refresh stats card"
           git push

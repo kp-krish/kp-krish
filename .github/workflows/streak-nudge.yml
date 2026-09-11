@@ -1,0 +1,47 @@
+name: Streak nudge
+
+# Checks your real contribution count each evening. If today is empty,
+# it opens (or updates) a single reminder issue. It does not commit
+# anything on your behalf.
+
+on:
+  schedule:
+    - cron: "0 3 * * *"    # 20:00 Phoenix time (UTC-7)
+  workflow_dispatch:
+
+permissions:
+  issues: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Count today's contributions
+        id: check
+        env:
+          GH_TOKEN: ${{ secrets.PAT_TOKEN || secrets.GITHUB_TOKEN }}
+        run: |
+          TODAY=$(date -u +%Y-%m-%d)
+          COUNT=$(curl -s -H "Authorization: Bearer $GH_TOKEN" \
+            -H "Content-Type: application/json" \
+            -d "{\"query\":\"query{user(login:\\\"kp-krish\\\"){contributionsCollection(from:\\\"${TODAY}T00:00:00Z\\\"){contributionCalendar{totalContributions}}}}\"}" \
+            https://api.github.com/graphql | grep -o '"totalContributions":[0-9]*' | grep -o '[0-9]*')
+          echo "count=${COUNT:-0}" >> $GITHUB_OUTPUT
+          echo "Contributions today: ${COUNT:-0}"
+
+      - name: Open reminder issue
+        if: steps.check.outputs.count == '0'
+        env:
+          GH_TOKEN: ${{ secrets.PAT_TOKEN || secrets.GITHUB_TOKEN }}
+        run: |
+          EXISTING=$(gh issue list --repo ${{ github.repository }} \
+            --label streak --state open --json number --jq '.[0].number')
+          BODY="No contributions recorded today. Run \`log\` and write two lines about what you worked on."
+          if [ -n "$EXISTING" ]; then
+            gh issue comment "$EXISTING" --repo ${{ github.repository }} --body "$BODY"
+          else
+            gh label create streak --repo ${{ github.repository }} --color 7c3aed --force || true
+            gh issue create --repo ${{ github.repository }} \
+              --title "Daily log reminder" --label streak --body "$BODY" \
+              --assignee kp-krish
+          fi

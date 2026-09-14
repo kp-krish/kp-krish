@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="382" viewBox="0 0 840 382" role="img" aria-label="GitHub activity summary">
+<style>.t{font:700 30px 'Segoe UI',Ubuntu,sans-serif;fill:#e6edf3}.l{font:400 12px 'Segoe UI',Ubuntu,sans-serif;fill:#8b949e;letter-spacing:.6px;text-transform:uppercase}.h{font:600 15px 'Segoe UI',Ubuntu,sans-serif;fill:#e6edf3}.s{font:400 11px 'Segoe UI',Ubuntu,sans-serif;fill:#8b949e}.lg{font:400 12px 'Segoe UI',Ubuntu,sans-serif;fill:#e6edf3}</style>
+<rect width="840" height="382" rx="14" fill="#0d1117" stroke="#21262d"/>
+<rect x="28" y="28" width="4" height="20" rx="2" fill="#7c3aed"/>
+<text x="44" y="44" class="h">Engineering activity</text>
+<text x="812" y="44" class="s" text-anchor="end">kp-krish &#183; updated 14 Sep 2026</text>
+<rect x="28.0" y="78" width="253.3" height="74" rx="10" fill="#161b22" stroke="#21262d"/>
+<text x="46.0" y="116" class="t">20</text>
+<text x="46.0" y="135" class="l">pull requests</text>
+<rect x="293.3" y="78" width="253.3" height="74" rx="10" fill="#161b22" stroke="#21262d"/>
+<text x="311.3" y="116" class="t">14</text>
+<text x="311.3" y="135" class="l">merged</text>
+<rect x="558.7" y="78" width="253.3" height="74" rx="10" fill="#161b22" stroke="#21262d"/>
+<text x="576.7" y="116" class="t">70%</text>
+<text x="576.7" y="135" class="l">merge rate</text>
+<rect x="28.0" y="164" width="253.3" height="74" rx="10" fill="#161b22" stroke="#21262d"/>
+<text x="46.0" y="202" class="t">22</text>
+<text x="46.0" y="221" class="l">repositories</text>
+<rect x="293.3" y="164" width="253.3" height="74" rx="10" fill="#161b22" stroke="#21262d"/>
+<text x="311.3" y="202" class="t">10</text>
+<text x="311.3" y="221" class="l">PRs this quarter</text>
+<text x="28" y="268" class="h">Language mix</text>
+<rect x="28.0" y="284" width="228.1" height="10" fill="#3178c6"/>
+<rect x="256.1" y="284" width="219.5" height="10" fill="#DA5B0B"/>
+<rect x="475.7" y="284" width="195.2" height="10" fill="#3572A5"/>
+<rect x="670.9" y="284" width="51.7" height="10" fill="#e34c26"/>
+<rect x="722.6" y="284" width="43.1" height="10" fill="#A97BFF"/>
+<rect x="765.7" y="284" width="17.2" height="10" fill="#563d7c"/>
+<rect x="28" y="284" width="784" height="10" rx="5" fill="none" stroke="#0d1117" stroke-width="0"/>
+<circle cx="33" cy="316" r="5" fill="#3178c6"/>
+<text x="44" y="320" class="lg">TypeScript 29.1%</text>
+<circle cx="167" cy="316" r="5" fill="#DA5B0B"/>
+<text x="178" y="320" class="lg">Jupyter Notebook 28.0%</text>
+<circle cx="343" cy="316" r="5" fill="#3572A5"/>
+<text x="354" y="320" class="lg">Python 24.9%</text>
+<circle cx="449" cy="316" r="5" fill="#e34c26"/>
+<text x="460" y="320" class="lg">HTML 6.6%</text>
+<circle cx="534" cy="316" r="5" fill="#A97BFF"/>
+<text x="545" y="320" class="lg">Kotlin 5.5%</text>
+<circle cx="633" cy="316" r="5" fill="#563d7c"/>
+<text x="644" y="320" class="lg">CSS 2.2%</text>
+</svg>

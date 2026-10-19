@@ -5,19 +5,19 @@
 <text x="44" y="44" class="h">Engineering activity</text>
 <text x="812" y="44" class="s" text-anchor="end">kp-krish &#183; updated 19 Oct 2026</text>
 <rect x="28.0" y="78" width="253.3" height="74" rx="10" fill="#161b22" stroke="#21262d"/>
-<text x="46.0" y="116" class="t">20</text>
+<text x="46.0" y="116" class="t">21</text>
 <text x="46.0" y="135" class="l">pull requests</text>
 <rect x="293.3" y="78" width="253.3" height="74" rx="10" fill="#161b22" stroke="#21262d"/>
 <text x="311.3" y="116" class="t">14</text>
 <text x="311.3" y="135" class="l">merged</text>
 <rect x="558.7" y="78" width="253.3" height="74" rx="10" fill="#161b22" stroke="#21262d"/>
-<text x="576.7" y="116" class="t">70%</text>
+<text x="576.7" y="116" class="t">67%</text>
 <text x="576.7" y="135" class="l">merge rate</text>
 <rect x="28.0" y="164" width="253.3" height="74" rx="10" fill="#161b22" stroke="#21262d"/>
 <text x="46.0" y="202" class="t">22</text>
 <text x="46.0" y="221" class="l">repositories</text>
 <rect x="293.3" y="164" width="253.3" height="74" rx="10" fill="#161b22" stroke="#21262d"/>
-<text x="311.3" y="202" class="t">10</text>
+<text x="311.3" y="202" class="t">11</text>
 <text x="311.3" y="221" class="l">PRs this quarter</text>
 <text x="28" y="268" class="h">Language mix</text>
 <rect x="28.0" y="284" width="228.1" height="10" fill="#3178c6"/>

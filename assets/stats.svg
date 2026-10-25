@@ -3,7 +3,7 @@
 <rect width="840" height="382" rx="14" fill="#0d1117" stroke="#21262d"/>
 <rect x="28" y="28" width="4" height="20" rx="2" fill="#7c3aed"/>
 <text x="44" y="44" class="h">Engineering activity</text>
-<text x="812" y="44" class="s" text-anchor="end">kp-krish &#183; updated 24 Oct 2026</text>
+<text x="812" y="44" class="s" text-anchor="end">kp-krish &#183; updated 25 Oct 2026</text>
 <rect x="28.0" y="78" width="253.3" height="74" rx="10" fill="#161b22" stroke="#21262d"/>
 <text x="46.0" y="116" class="t">21</text>
 <text x="46.0" y="135" class="l">pull requests</text>
@@ -20,19 +20,19 @@
 <text x="311.3" y="202" class="t">10</text>
 <text x="311.3" y="221" class="l">PRs this quarter</text>
 <text x="28" y="268" class="h">Language mix</text>
-<rect x="28.0" y="284" width="225.0" height="10" fill="#3178c6"/>
-<rect x="253.0" y="284" width="216.4" height="10" fill="#DA5B0B"/>
-<rect x="469.4" y="284" width="203.8" height="10" fill="#3572A5"/>
-<rect x="673.2" y="284" width="51.0" height="10" fill="#e34c26"/>
-<rect x="724.2" y="284" width="42.3" height="10" fill="#A97BFF"/>
-<rect x="766.5" y="284" width="17.2" height="10" fill="#563d7c"/>
+<rect x="28.0" y="284" width="224.2" height="10" fill="#3178c6"/>
+<rect x="252.2" y="284" width="215.6" height="10" fill="#DA5B0B"/>
+<rect x="467.8" y="284" width="204.6" height="10" fill="#3572A5"/>
+<rect x="672.4" y="284" width="51.0" height="10" fill="#e34c26"/>
+<rect x="723.4" y="284" width="42.3" height="10" fill="#A97BFF"/>
+<rect x="765.7" y="284" width="17.2" height="10" fill="#563d7c"/>
 <rect x="28" y="284" width="784" height="10" rx="5" fill="none" stroke="#0d1117" stroke-width="0"/>
 <circle cx="33" cy="316" r="5" fill="#3178c6"/>
-<text x="44" y="320" class="lg">TypeScript 28.7%</text>
+<text x="44" y="320" class="lg">TypeScript 28.6%</text>
 <circle cx="167" cy="316" r="5" fill="#DA5B0B"/>
-<text x="178" y="320" class="lg">Jupyter Notebook 27.6%</text>
+<text x="178" y="320" class="lg">Jupyter Notebook 27.5%</text>
 <circle cx="343" cy="316" r="5" fill="#3572A5"/>
-<text x="354" y="320" class="lg">Python 26.0%</text>
+<text x="354" y="320" class="lg">Python 26.1%</text>
 <circle cx="449" cy="316" r="5" fill="#e34c26"/>
 <text x="460" y="320" class="lg">HTML 6.5%</text>
 <circle cx="534" cy="316" r="5" fill="#A97BFF"/>
